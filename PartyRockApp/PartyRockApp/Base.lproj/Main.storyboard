@@ -182,6 +182,7 @@
                     </view>
                     <connections>
                         <outlet property="titleLBL" destination="uFj-uA-lMi" id="P3x-Gz-tWw"/>
+                        <outlet property="webView" destination="Hjy-Lc-QQZ" id="3n2-2c-alR"/>
                     </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="jLs-4r-iaT" userLabel="First Responder" sceneMemberID="firstResponder"/>

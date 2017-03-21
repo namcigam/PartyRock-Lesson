@@ -57,6 +57,21 @@ class MainVC: UIViewController, UITableViewDelegate, UITableViewDataSource {
         print("the number of items in the party rock array is: \(partyRockArray.count)")
         return partyRockArray.count
     }
+    
+    func tableView(_ tableView: UITableView, didSelectRowAt indexPath: IndexPath) {
+        let partyRock = partyRockArray[indexPath.row]
+        performSegue(withIdentifier: "VideoVC", sender: partyRock)
+    }
+    
+    override func prepare(for segue: UIStoryboardSegue, sender: Any?) {
+        
+        if let destination = segue.destination as? VideoVC {
+            
+            if let party = sender as? PartyRock {
+                destination.partyRock = party
+            }
+        }
+    }
 
 }
 
