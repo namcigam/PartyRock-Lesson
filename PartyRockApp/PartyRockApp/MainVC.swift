@@ -23,7 +23,6 @@ class MainVC: UIViewController, UITableViewDelegate, UITableViewDataSource {
         let p4 = PartyRock(imageURL: "http://www.billboard.com/files/styles/article_main_image/public/media/lmfao-party-rock-anthem-2011-billboard-650.jpg", videoURL: "<iframe width=\"560\" height=\"315\" src=\"https://www.youtube.com/embed/gZIqW92GaTQ\" frameborder=\"0\" allowfullscreen></iframe>", videoTitle: "Party Rock Commercial")
         let p5 = PartyRock(imageURL: "http://direct-ns.rhap.com/imageserver/v2/albums/Alb.219913217/images/600x600.jpg", videoURL: "<iframe width=\"560\" height=\"315\" src=\"https://www.youtube.com/embed/tWyuglGCKgE\" frameborder=\"0\" allowfullscreen></iframe>", videoTitle: "Juicy Wiggle")
         
-        
         partyRockArray.append(p1)
         partyRockArray.append(p2)
         partyRockArray.append(p3)
@@ -36,14 +35,12 @@ class MainVC: UIViewController, UITableViewDelegate, UITableViewDataSource {
         print("hello")
 
     }
-
-
     
     func tableView(_ tableView: UITableView, cellForRowAt indexPath: IndexPath) -> UITableViewCell {
         
         print("I am inside the tableView function now")
-        if let cell = tableView.dequeueReusableCell(withIdentifier: "PartyCell", for: indexPath) as? PartyCell {
-          
+        if let cell = tableView.dequeueReusableCell(withIdentifier: "PartyCellID", for: indexPath) as? PartyCell {
+            print("this might work")
             let partyRock = partyRockArray[indexPath.row]
             cell.updateUI(partyRock: partyRock)
             print("This is working")

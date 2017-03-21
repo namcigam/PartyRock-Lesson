@@ -74,7 +74,7 @@
                                 <rect key="frame" x="0.0" y="184" width="375" height="483"/>
                                 <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                                 <prototypes>
-                                    <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" selectionStyle="default" indentationWidth="10" reuseIdentifier="PartyCell" rowHeight="67" id="UXH-qn-m0P" customClass="PartyCell" customModule="PartyRockApp" customModuleProvider="target">
+                                    <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" selectionStyle="default" indentationWidth="10" reuseIdentifier="PartyCellID" rowHeight="67" id="UXH-qn-m0P" customClass="PartyCell" customModule="PartyRockApp" customModuleProvider="target">
                                         <rect key="frame" x="0.0" y="28" width="375" height="67"/>
                                         <autoresizingMask key="autoresizingMask"/>
                                         <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" tableViewCell="UXH-qn-m0P" id="JEa-cN-xKQ">
@@ -88,8 +88,8 @@
                                                         <constraint firstAttribute="width" constant="60" id="qVi-S1-c8n"/>
                                                     </constraints>
                                                 </imageView>
-                                                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" misplaced="YES" text="Where the sun goes" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="obO-wK-Zww">
-                                                    <rect key="frame" x="76" y="15" width="278" height="42"/>
+                                                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Where the sun goes" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="obO-wK-Zww">
+                                                    <rect key="frame" x="76" y="12.5" width="283" height="42"/>
                                                     <constraints>
                                                         <constraint firstAttribute="height" constant="42" id="imx-tf-KJf"/>
                                                     </constraints>
@@ -103,7 +103,7 @@
                                                 <constraint firstItem="e0K-UL-ejJ" firstAttribute="leading" secondItem="JEa-cN-xKQ" secondAttribute="leading" constant="8" id="YIm-hG-rn8"/>
                                                 <constraint firstItem="e0K-UL-ejJ" firstAttribute="centerY" secondItem="JEa-cN-xKQ" secondAttribute="centerY" id="dS5-a1-5Od"/>
                                                 <constraint firstItem="obO-wK-Zww" firstAttribute="centerY" secondItem="JEa-cN-xKQ" secondAttribute="centerY" id="iTR-nm-Wpe"/>
-                                                <constraint firstAttribute="trailingMargin" secondItem="obO-wK-Zww" secondAttribute="trailing" id="rxh-v8-sit"/>
+                                                <constraint firstAttribute="trailingMargin" secondItem="obO-wK-Zww" secondAttribute="trailing" constant="8" id="iu9-Bk-uAN"/>
                                             </constraints>
                                         </tableViewCellContentView>
                                         <connections>
@@ -120,8 +120,8 @@
                             <constraint firstItem="Cx8-Oz-LHk" firstAttribute="top" secondItem="BRr-q4-VR6" secondAttribute="bottom" id="CvW-cq-5ts"/>
                             <constraint firstAttribute="trailing" secondItem="K4d-0U-fu3" secondAttribute="trailing" id="EWx-W6-NPD"/>
                             <constraint firstItem="K4d-0U-fu3" firstAttribute="top" secondItem="Cx8-Oz-LHk" secondAttribute="bottom" id="FZP-H1-GWn"/>
+                            <constraint firstItem="wfy-db-euE" firstAttribute="top" secondItem="K4d-0U-fu3" secondAttribute="bottom" id="LJS-jb-Lpe"/>
                             <constraint firstItem="BRr-q4-VR6" firstAttribute="leading" secondItem="8bC-Xf-vdC" secondAttribute="leading" id="TD1-GM-Kfl"/>
-                            <constraint firstAttribute="bottom" secondItem="K4d-0U-fu3" secondAttribute="bottom" id="TfP-aH-cUE"/>
                             <constraint firstItem="K4d-0U-fu3" firstAttribute="leading" secondItem="8bC-Xf-vdC" secondAttribute="leading" id="awg-tK-OwV"/>
                             <constraint firstAttribute="trailing" secondItem="Cx8-Oz-LHk" secondAttribute="trailing" id="bqw-Ja-3OZ"/>
                             <constraint firstItem="Cx8-Oz-LHk" firstAttribute="leading" secondItem="8bC-Xf-vdC" secondAttribute="leading" id="dWS-qO-ba4"/>
@@ -129,7 +129,7 @@
                         </constraints>
                     </view>
                     <connections>
-                        <outlet property="tableView" destination="K4d-0U-fu3" id="oRI-xj-6o3"/>
+                        <outlet property="tableView" destination="K4d-0U-fu3" id="rsR-LT-AKo"/>
                         <segue destination="rmG-R1-epq" kind="showDetail" identifier="VideoVC" id="Ohu-cx-6lI"/>
                     </connections>
                 </viewController>

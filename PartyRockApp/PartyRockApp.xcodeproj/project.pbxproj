@@ -489,6 +489,7 @@
 				PRODUCT_BUNDLE_IDENTIFIER = TheBrewery.PartyRockApp;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SWIFT_VERSION = 3.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
 			};
 			name = Debug;
 		};
@@ -502,6 +503,7 @@
 				PRODUCT_BUNDLE_IDENTIFIER = TheBrewery.PartyRockApp;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SWIFT_VERSION = 3.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
 			};
 			name = Release;
 		};
@@ -582,6 +584,7 @@
 				4CE820DF1E803A08009C5EB5 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 		4CE820E01E803A08009C5EB5 /* Build configuration list for PBXNativeTarget "PartyRockAppTests" */ = {
 			isa = XCConfigurationList;
@@ -590,6 +593,7 @@
 				4CE820E21E803A08009C5EB5 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 		4CE820E31E803A08009C5EB5 /* Build configuration list for PBXNativeTarget "PartyRockAppUITests" */ = {
 			isa = XCConfigurationList;
@@ -598,6 +602,7 @@
 				4CE820E51E803A08009C5EB5 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 

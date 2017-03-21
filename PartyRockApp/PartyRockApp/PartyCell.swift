@@ -20,7 +20,7 @@ class PartyCell: UITableViewCell {
 
     func updateUI(partyRock: PartyRock) {
         videoTitle.text = partyRock.videoTitle
-        
+        print("updateUI has happened")
         let url = URL(string: partyRock.imageURL)!
         DispatchQueue.global().async {
             do {
