@@ -33,13 +33,16 @@
                                     <segment title="A-Z"/>
                                 </segments>
                                 <color key="tintColor" white="0.33333333333333331" alpha="1" colorSpace="calibratedWhite"/>
+                                <connections>
+                                    <action selector="segmentChange:" destination="BYZ-38-t0r" eventType="valueChanged" id="XLX-f9-zFL"/>
+                                </connections>
                             </segmentedControl>
                             <tableView clipsSubviews="YES" contentMode="scaleToFill" misplaced="YES" alwaysBounceVertical="YES" showsHorizontalScrollIndicator="NO" showsVerticalScrollIndicator="NO" dataMode="prototypes" style="plain" separatorStyle="none" rowHeight="150" sectionHeaderHeight="28" sectionFooterHeight="28" translatesAutoresizingMaskIntoConstraints="NO" id="0No-EM-M1t">
                                 <rect key="frame" x="16" y="115" width="343" height="552"/>
                                 <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                                 <color key="sectionIndexBackgroundColor" white="0.0" alpha="0.0" colorSpace="calibratedWhite"/>
                                 <prototypes>
-                                    <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" selectionStyle="default" indentationWidth="10" reuseIdentifier="ItemCell" rowHeight="150" id="znh-Gz-Knq" customClass="ItemCell" customModule="DreamLister__Mike" customModuleProvider="target">
+                                    <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" selectionStyle="none" indentationWidth="10" reuseIdentifier="ItemCell" rowHeight="150" id="znh-Gz-Knq" customClass="ItemCell" customModule="DreamLister__Mike" customModuleProvider="target">
                                         <rect key="frame" x="0.0" y="28" width="343" height="150"/>
                                         <autoresizingMask key="autoresizingMask"/>
                                         <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" tableViewCell="znh-Gz-Knq" id="QCU-AC-b7i">
@@ -175,6 +178,9 @@
                                     <constraint firstAttribute="width" constant="100" id="Apc-rv-Hyy"/>
                                     <constraint firstAttribute="height" constant="100" id="hbd-yg-fWk"/>
                                 </constraints>
+                                <connections>
+                                    <action selector="addImage:" destination="6PE-Xj-rAY" eventType="touchUpInside" id="6cp-0D-YMw"/>
+                                </connections>
                             </button>
                             <textField opaque="NO" clipsSubviews="YES" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" placeholder="Title" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="kvV-QS-x5n" customClass="CustomTextField" customModule="DreamLister__Mike" customModuleProvider="target">
                                 <rect key="frame" x="124" y="82" width="235" height="40"/>
@@ -222,6 +228,9 @@
                                 <state key="normal" title="Save Item">
                                     <color key="titleColor" white="0.66666666666666663" alpha="1" colorSpace="calibratedWhite"/>
                                 </state>
+                                <connections>
+                                    <action selector="savePressed:" destination="6PE-Xj-rAY" eventType="touchUpInside" id="Tge-jA-L8M"/>
+                                </connections>
                             </button>
                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Select Store" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="dAk-GG-JA0">
                                 <rect key="frame" x="112" y="341" width="151" height="21"/>
@@ -267,8 +276,18 @@
                     <navigationItem key="navigationItem" title="Add/Edit" id="QTf-MD-aRa">
                         <barButtonItem key="rightBarButtonItem" systemItem="trash" id="fLz-8K-cM4">
                             <color key="tintColor" red="1" green="0.30424267519999998" blue="0.2261519018" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                            <connections>
+                                <action selector="deletePressed:" destination="6PE-Xj-rAY" id="ahO-ty-fDq"/>
+                            </connections>
                         </barButtonItem>
                     </navigationItem>
+                    <connections>
+                        <outlet property="detailsField" destination="ItW-D1-mGt" id="Cg5-yh-fuQ"/>
+                        <outlet property="priceField" destination="o2U-if-J2y" id="nxi-d5-6fz"/>
+                        <outlet property="storePicker" destination="KTE-X3-YU7" id="py9-I1-n0b"/>
+                        <outlet property="thumbImage" destination="ZVl-3T-9qc" id="hiX-lb-2Yw"/>
+                        <outlet property="titleField" destination="kvV-QS-x5n" id="STh-uE-dpB"/>
+                    </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="qll-Ch-bLc" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
