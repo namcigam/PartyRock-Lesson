@@ -48,8 +48,18 @@
                                 <fontDescription key="fontDescription" type="system" pointSize="14"/>
                                 <textInputTraits key="textInputTraits"/>
                             </textField>
+                            <textField opaque="NO" clipsSubviews="YES" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" placeholder="Enter a new name" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="j1n-Xj-5Fb">
+                                <rect key="frame" x="67" y="199" width="240" height="30"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="30" id="R94-Il-pFC"/>
+                                    <constraint firstAttribute="width" constant="240" id="XYG-Pu-zvn"/>
+                                </constraints>
+                                <nil key="textColor"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                                <textInputTraits key="textInputTraits"/>
+                            </textField>
                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="LWr-z2-DRz">
-                                <rect key="frame" x="152" y="474" width="70" height="45"/>
+                                <rect key="frame" x="152" y="496" width="70" height="45"/>
                                 <constraints>
                                     <constraint firstAttribute="width" constant="70" id="IEr-u6-xw0"/>
                                     <constraint firstAttribute="height" constant="45" id="bWS-Va-SOp"/>
@@ -59,14 +69,30 @@
                                     <action selector="renamePressed:" destination="BYZ-38-t0r" eventType="touchUpInside" id="UzR-hJ-saT"/>
                                 </connections>
                             </button>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="jl1-hS-LPI">
+                                <rect key="frame" x="152" y="549" width="70" height="45"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="45" id="SFI-jC-srj"/>
+                                    <constraint firstAttribute="width" constant="70" id="sde-R9-Usg"/>
+                                </constraints>
+                                <state key="normal" title="Rename"/>
+                                <connections>
+                                    <action selector="rename2Pressed:" destination="BYZ-38-t0r" eventType="touchUpInside" id="R9H-Pg-e9F"/>
+                                    <action selector="renamePressed:" destination="BYZ-38-t0r" eventType="touchUpInside" id="oLa-i6-uT2"/>
+                                </connections>
+                            </button>
                         </subviews>
                         <color key="backgroundColor" red="0.10414174118267483" green="1" blue="0.40423136530195847" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                         <constraints>
-                            <constraint firstItem="LWr-z2-DRz" firstAttribute="top" secondItem="JP6-E1-Zbm" secondAttribute="bottom" constant="108" id="9La-Zu-dVC"/>
+                            <constraint firstItem="j1n-Xj-5Fb" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" id="1tO-Yh-HIo"/>
+                            <constraint firstItem="jl1-hS-LPI" firstAttribute="top" secondItem="LWr-z2-DRz" secondAttribute="bottom" constant="8" id="3eK-Cp-7xO"/>
+                            <constraint firstItem="LWr-z2-DRz" firstAttribute="top" secondItem="JP6-E1-Zbm" secondAttribute="bottom" constant="130" id="9La-Zu-dVC"/>
+                            <constraint firstItem="j1n-Xj-5Fb" firstAttribute="top" secondItem="j4h-EH-yU9" secondAttribute="bottom" constant="4" id="AxG-SZ-y95"/>
                             <constraint firstItem="JP6-E1-Zbm" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" id="SRX-o6-mSy"/>
                             <constraint firstItem="vAO-tK-Wbn" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" id="TsM-SI-Iyh"/>
                             <constraint firstItem="LWr-z2-DRz" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" id="aBb-jK-HEg"/>
                             <constraint firstItem="JP6-E1-Zbm" firstAttribute="top" secondItem="vAO-tK-Wbn" secondAttribute="bottom" constant="98" id="fvX-w6-lje"/>
+                            <constraint firstItem="jl1-hS-LPI" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" id="hXr-J4-dpq"/>
                             <constraint firstItem="j4h-EH-yU9" firstAttribute="top" secondItem="vAO-tK-Wbn" secondAttribute="bottom" constant="33" id="nYS-P2-rnw"/>
                             <constraint firstItem="j4h-EH-yU9" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" id="u60-tL-Hi2"/>
                             <constraint firstItem="vAO-tK-Wbn" firstAttribute="top" secondItem="y3c-jy-aDJ" secondAttribute="bottom" constant="50" id="yle-ak-CE9"/>
@@ -75,6 +101,7 @@
                     <connections>
                         <outlet property="fullName" destination="vAO-tK-Wbn" id="jn3-Av-Oi7"/>
                         <outlet property="renameField" destination="j4h-EH-yU9" id="UVn-Oh-Wab"/>
+                        <outlet property="renameField2" destination="j1n-Xj-5Fb" id="GSP-HL-jI3"/>
                     </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>

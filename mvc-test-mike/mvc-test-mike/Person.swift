@@ -17,12 +17,17 @@ class Person {
             return _firstName
         }
         set {
-                _firstName = newValue
-            }
+            _firstName = newValue
         }
+    }
 
     var lastName: String {
-        return _lastName
+        get {
+            return _lastName
+        }
+        set {
+            _lastName = newValue
+        }
     }
     
     init(first: String, last: String) {
@@ -31,7 +36,7 @@ class Person {
     }
 
     var fullName: String {
-        return "\(_firstName) \(_lastName)"
+        return "\(_firstName!) \(_lastName!)"
 
     }
     
